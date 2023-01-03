@@ -3,6 +3,7 @@
   "displayName": "Poopy: Syntax Highlighting",
   "description": "Syntax Highlighting support for Poopy Language ",
   "version": "0.0.1",
+  "publisher": "zszazi",
   "engines": {
     "vscode": "^1.74.0"
   },
