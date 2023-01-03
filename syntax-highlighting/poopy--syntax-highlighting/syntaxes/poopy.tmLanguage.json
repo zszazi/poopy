@@ -1,0 +1,86 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Poopy",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#operatorlogical"
+		},
+		{
+			"include": "#operatorsymbols"
+		},
+		{
+			"include": "#mathconstants"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+			{
+				"name": "keyword.control.poopy",
+				"match": "\\b(LOOP|TILL|DO|STEP|IF|THEN|ALTER|ELSE|END)\\b"
+			},
+			{
+				"name": "keyword.builtin.poopy",
+				"match": "\\b(POOP_OUT|POOP_RUN|POOP_OUT_RET|POOP_IN|POOP_IN_INT|CLEAR|IS_NUMBER|IS_STRING|IS_PROC|IS_BUILTIN|IS_LIST)\\b"
+			},
+			{
+				"name": "keyword.mathbuiltin.poopy",
+				"match": "\\b(MATH_SQRT)\\b"
+			},
+			{
+				"name": "keyword.identifier.poopy",
+				"match": "\\b(NULL|TRUE|FALSE)\\b"
+			},
+			{
+				"name": "keyword.variable.poopy",
+				"match": "\\b(BUCKET)\\b"
+			},
+			{
+				"name": "keyword.proc.poopy",
+				"match": "\\b(PROC)\\b"
+			}
+		]
+		},
+		"strings": {
+			"name": "string.quoted.double.poopy",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.poopy",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comments": 
+		{
+			"name":"comment.inline.poopy",
+			"match": "@.*"
+		},
+		"operatorsymbols": 
+		{
+			"name":"operator.symbols.poopy",
+			"match": "\\b(\\+|\\-|\\*|\\^|\\/|\\;|\\!|\\=|\\>|\\>\\=|\\<|\\<\\=|\\~|\\:)\\b"
+		},
+		"operatorlogical": 
+		{
+			"name":"operator.logical.poopy",
+			"match": "\\b(AND|OR|XOR|NOT)\\b"
+		},
+		"mathconstants": 
+		{
+			"name":"constant.math.poopy",
+			"match": "\\b(MATH_PI|MATH_EULER|MATH_TAU|MATH_INF)\\b"
+		}
+	},
+	"scopeName": "source.poop"
+}

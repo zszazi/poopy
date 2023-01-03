@@ -1,0 +1,25 @@
+{
+  "name": "poopy--syntax-highlighting",
+  "displayName": "Poopy: Syntax Highlighting",
+  "description": "Syntax Highlighting support for Poopy Language ",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "poopy",
+      "aliases": ["Poopy", "poopy"],
+      "extensions": [".poop",".💩"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "poopy",
+      "scopeName": "source.poop",
+      "path": "./syntaxes/poopy.tmLanguage.json"
+    }]
+  }
+}
