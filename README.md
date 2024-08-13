@@ -17,9 +17,9 @@ Few Examples
 ```
 @This is a comment
 
-POOP_OUT("Poopy");
-POOP_OUT("Poopy1");
-POOP_OUT("Poopy2");
+POOP_OUT("Poopy")
+POOP_OUT("Poopy1")
+POOP_OUT("Poopy2")
 POOP_OUT("Poopy3")
 BUCKET aa = 12
 BUCKET bb = 13
