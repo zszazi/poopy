@@ -1,5 +1,7 @@
 # poopy
 💩 Poopy Lang 💩( Take a Big Stinky Dump here )
+My own Fun Programming language to Poop. 
+
 
 To Poop 
 ```
